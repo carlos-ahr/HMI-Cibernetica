@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Sesión - HMI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Paleta de colores IPN: Guinda (#701E3C), Blanco (#FFFFFF), Amarillo/Dorado (#FFCC00) */
+        :root {
+            --color-guinda: #701E3C;
+            --color-blanco: #FFFFFF;
+            --color-dorado: #FFCC00;
+            --color-fondo: #F5F5F5; /* Gris muy claro para el fondo */
+            --color-texto: #333333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--color-fondo);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: var(--color-texto);
+        }
+
+        .login-container {
+            background-color: var(--color-blanco);
+            border-radius: 8px; /* Bordes más suaves */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            border-top: 8px solid var(--color-guinda); /* Barra superior guinda */
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            /* Placeholder para el logo del IPN (puedes reemplazarlo por una imagen real) */
+            background-color: var(--color-guinda);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* Si usas una imagen real, quita el background-color y ajusta el tamaño */
+        }
+
+        .header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-guinda);
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: var(--color-texto);
+            margin: 0;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-guinda);
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #CCCCCC;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+
+        .input-group input[type="text"]:focus,
+        .input-group input[type="password"]:focus {
+            border-color: var(--color-guinda);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(112, 30, 60, 0.2);
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: var(--color-guinda);
+            color: var(--color-blanco);
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #5A1731; /* Guinda más oscuro */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .links {
+            margin-top: 25px;
+            text-align: center;
+            border-top: 1px solid #EEEEEE;
+            padding-top: 15px;
+        }
+
+        .links a {
+            display: block;
+            color: var(--color-guinda);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+
+        .links a:hover {
+            color: var(--color-dorado);
+            text-decoration: underline;
+        }
+
+        /* Para pantallas más pequeñas */
+        @media (max-width: 500px) {
+            .login-container {
+                margin: 20px;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="header">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2245%22%20fill%3D%22%23701E3C%22%2F%3E%3Ctext%20x%3D%2250%22%20y%3D%2255%22%20font-size%3D%2230%22%20fill%3D%22%23FFFFFF%22%20text-anchor%3D%22middle%22%3EIPN%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Logo IPN Placeholder">
+            <h2>Iniciar Proyecto </h2>
+            <p>Academia - Cibernetica</p>
+        </div>
+        
+        <form action="/ruta-de-procesamiento-de-login" method="POST">
+            <div class="input-group">
+                <label for="boleta">Correo o Usuario</label>
+                <input type="text" id="boleta" name="boleta" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Ingresar</button>
+        </form>
+        
+        <div class="links">
+            <a href="/recuperar-clave">Recuperar Contraseña</a>
+            <a href="/ayuda-acceso">Ayuda con el Acceso</a>
+        </div>
+    </div>
+
+</body>
+</html>

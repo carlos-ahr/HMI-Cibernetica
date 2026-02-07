@@ -1,0 +1,756 @@
+[00:46:48] [INFO] [MQTT] Conectado exitosamente con código: 0
+[02:09:21] [INFO] [MQTT] Conectado exitosamente con código: 0
+[02:16:12] [INFO] [MQTT] Conectado exitosamente con código: 0
+[02:47:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:47:36] [INFO] Verificando estado de conexión de los dispositivos...
+[02:47:36] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:47:37] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:47:38] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:47:39] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:47:39] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Conectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[02:47:44] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:47:44] [INFO] Verificando estado de conexión de los dispositivos...
+[02:47:44] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:47:45] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:47:46] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:47:47] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:47:49] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:47:49] [INFO] Verificando estado de conexión de los dispositivos...
+[02:47:49] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:47:50] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:47:51] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:47:52] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:47:54] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:47:54] [INFO] Verificando estado de conexión de los dispositivos...
+[02:47:54] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:47:55] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:47:56] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:47:57] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:47:59] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:47:59] [INFO] Verificando estado de conexión de los dispositivos...
+[02:47:59] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:00] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:01] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:02] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:04] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:04] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:04] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:05] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:06] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:07] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:09] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:09] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:10] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:11] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:12] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:14] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:14] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:15] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:16] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:17] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:19] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:19] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:20] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:21] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:22] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:24] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:24] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:25] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:26] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:27] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:29] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:29] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:30] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:31] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:32] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:34] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:34] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:34] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:35] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:36] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:37] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:39] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:39] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:39] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:40] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:40] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:40] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:41] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:41] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:42] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:42] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:43] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:43] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Conectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[02:48:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:48] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:48] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:49] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:50] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:51] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:53] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:53] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:53] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:54] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:48:55] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:48:56] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:48:58] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:48:58] [INFO] Verificando estado de conexión de los dispositivos...
+[02:48:58] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:48:59] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:00] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:01] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:03] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:03] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:03] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:04] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:05] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:06] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:08] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:08] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:08] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:09] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:10] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:11] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:13] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:13] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:13] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:14] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:15] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:16] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:18] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:18] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:19] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:20] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:21] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:23] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:23] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:24] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:25] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:26] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:27] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:28] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:28] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:28] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:29] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:30] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Conectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[02:49:30] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:31] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:35] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:35] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:36] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:37] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:38] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:40] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:40] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:41] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:42] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:43] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:45] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:45] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:46] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:47] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:48] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:50] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:50] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:50] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:51] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:52] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:53] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:49:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:55] [INFO] Verificando estado de conexión de los dispositivos...
+[02:49:55] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:49:56] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:49:57] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:49:58] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:00] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:00] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:00] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:01] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:02] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:03] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:05] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:05] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:06] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:07] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:08] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:10] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:10] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:11] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:12] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:13] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:15] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:15] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:16] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:17] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:18] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:20] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:20] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:21] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:22] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:23] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:25] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:25] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:26] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:27] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:28] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:30] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:30] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:30] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:31] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:32] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:33] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:35] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:35] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:36] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:37] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:38] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:40] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:40] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:41] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:42] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:43] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:45] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:45] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:46] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:47] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:48] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:50] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:50] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:50] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:51] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:52] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:53] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:50:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:50:55] [INFO] Verificando estado de conexión de los dispositivos...
+[02:50:55] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:50:56] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:50:57] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:50:58] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:00] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:00] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:00] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:01] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:02] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:03] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:05] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:05] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:06] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:07] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:08] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:10] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:10] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:11] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:12] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:13] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:15] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:15] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:16] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:17] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:18] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:20] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:20] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:21] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:22] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:23] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:25] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:25] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:26] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:27] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:28] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:30] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:30] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:30] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:31] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:32] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Conectado
+[02:51:32] [DEBUG] [MQTT] dispositivos/registro/ESP32_PID/1: 
+{
+  "id": "ESP32_PID",
+  "ip": "192.168.1.53",
+  "hostname"
+[02:51:32] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ESP32_PID/1
+[02:51:32] [DEBUG] Fragmento #1 recibido de ESP32_PID
+[02:51:32] [DEBUG] [MQTT] dispositivos/registro/ESP32_PID/2: : "PID_MOTOR",
+  "tipo": "ESP32",
+  "comunicacion": "mqtt",
+
+[02:51:32] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ESP32_PID/2
+[02:51:32] [DEBUG] Fragmento #2 recibido de ESP32_PID
+[02:51:32] [DEBUG] [MQTT] dispositivos/registro/ESP32_PID/3:   "puerto": 1883,
+  "topics_pub": [
+    "analog/setpoint_act
+[02:51:32] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ESP32_PID/3
+[02:51:32] [DEBUG] Fragmento #3 recibido de ESP32_PID
+[02:51:32] [DEBUG] [MQTT] dispositivos/registro/ESP32_PID/4: ual",
+    "analog/medida",
+    "analog/salidaPID"
+  ],
+  "to
+[02:51:32] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ESP32_PID/4
+[02:51:32] [DEBUG] Fragmento #4 recibido de ESP32_PID
+[02:51:32] [DEBUG] [MQTT] dispositivos/registro/ESP32_PID/5: pics_sub": [
+    "analog/setpoint",
+    "analog/kp",
+    "an
+[02:51:32] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ESP32_PID/5
+[02:51:32] [DEBUG] Fragmento #5 recibido de ESP32_PID
+[02:51:32] [DEBUG] [MQTT] dispositivos/registro/ESP32_PID/6: alog/ki",
+    "analog/kd"
+  ]
+}
+
+[02:51:32] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ESP32_PID/6
+[02:51:32] [DEBUG] Fragmento #6 recibido de ESP32_PID
+[02:51:32] [DEBUG] [MQTT] dispositivos/registro/ESP32_PID/final: <<END>>
+[02:51:32] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ESP32_PID/final
+[02:51:32] [WARNING] DEBUG: final recibido para ESP32_PID
+[02:51:32] [WARNING] DEBUG: claves activas: ['ESP32_PID']
+[02:51:32] [DEBUG] JSON RECONSTRUIDO COMPLETO para ESP32_PID:
+
+{
+  "id": "ESP32_PID",
+  "ip": "192.168.1.53",
+  "hostname": "PID_MOTOR",
+  "tipo": "ESP32",
+  "comunicacion": "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "analog/setpoint_actual",
+    "analog/medida",
+    "analog/salidaPID"
+  ],
+  "topics_sub": [
+    "analog/setpoint",
+    "analog/kp",
+    "analog/ki",
+    "analog/kd"
+  ]
+}
+
+[02:51:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:32] [DEBUG] Archivo dispositivos.json guardado correctamente.
+[02:51:32] [INFO] Dispositivo 'ESP32_PID' actualizado con IP 192.168.1.53.
+[02:51:32] [INFO] Dispositivo 'ESP32_PID' registrado correctamente.
+[02:51:33] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:35] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:35] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:36] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:36] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Conectado
+[02:51:37] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:40] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:40] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:41] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:42] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:43] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:45] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:45] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:46] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:47] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:48] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:50] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:50] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:50] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:51] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:52] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:53] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:51:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:51:55] [INFO] Verificando estado de conexión de los dispositivos...
+[02:51:55] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:51:56] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:51:57] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:51:58] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:00] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:00] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:00] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:01] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:02] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:03] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:05] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:05] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:06] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:07] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:08] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:10] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:10] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:11] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:12] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:13] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:15] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:15] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:16] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:16] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:17] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:20] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:20] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:21] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:22] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:23] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:25] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:25] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:26] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:27] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:28] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:31] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:31] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:32] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:33] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:34] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:36] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:36] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:37] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:38] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:39] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:41] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:41] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:41] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:42] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:43] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:44] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:46] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:46] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:46] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:47] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:47] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:48] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:51] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:51] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:51] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:52] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:53] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:54] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:52:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:52:56] [INFO] Verificando estado de conexión de los dispositivos...
+[02:52:56] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:52:57] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:52:58] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:52:59] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:53:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:53:01] [INFO] Verificando estado de conexión de los dispositivos...
+[02:53:01] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:53:02] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:53:03] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:53:04] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:53:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:53:06] [INFO] Verificando estado de conexión de los dispositivos...
+[02:53:06] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:53:07] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:53:08] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:53:09] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:53:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:53:11] [INFO] Verificando estado de conexión de los dispositivos...
+[02:53:11] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:53:12] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:53:13] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:53:14] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:53:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:53:16] [INFO] Verificando estado de conexión de los dispositivos...
+[02:53:16] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:53:17] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:53:18] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:53:19] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:53:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:53:21] [INFO] Verificando estado de conexión de los dispositivos...
+[02:53:21] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:53:22] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:53:23] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:53:24] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:53:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:53:26] [INFO] Verificando estado de conexión de los dispositivos...
+[02:53:26] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:53:27] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:53:27] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:53:28] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:54:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:54:27] [INFO] Verificando estado de conexión de los dispositivos...
+[02:54:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:54:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:54:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:54:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:03] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:03] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:03] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:04] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:05] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:06] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:06] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:06] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:07] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:07] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:08] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:11] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:11] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:12] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:13] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:14] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:16] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:16] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:17] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:18] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:19] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:21] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:21] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:22] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:23] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:24] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:26] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:26] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:27] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:28] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:29] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:31] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:31] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:32] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:33] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:34] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:36] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:36] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:37] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:38] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:39] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:41] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:41] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:41] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:42] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:43] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:44] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:46] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:46] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:46] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:47] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:48] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:49] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:51] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:51] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:51] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:52] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:53] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:54] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:55:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:55:56] [INFO] Verificando estado de conexión de los dispositivos...
+[02:55:56] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:55:57] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:55:58] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:55:59] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:56:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:56:01] [INFO] Verificando estado de conexión de los dispositivos...
+[02:56:01] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:56:02] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:56:03] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:56:04] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:56:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:56:06] [INFO] Verificando estado de conexión de los dispositivos...
+[02:56:06] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:56:07] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:56:08] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:56:09] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:56:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:56:27] [INFO] Verificando estado de conexión de los dispositivos...
+[02:56:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:56:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:56:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:56:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:57:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:57:27] [INFO] Verificando estado de conexión de los dispositivos...
+[02:57:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:57:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:57:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:57:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:58:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:58:27] [INFO] Verificando estado de conexión de los dispositivos...
+[02:58:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:58:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:58:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:58:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[02:59:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:59:27] [INFO] Verificando estado de conexión de los dispositivos...
+[02:59:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[02:59:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[02:59:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[02:59:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:00:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:00:27] [INFO] Verificando estado de conexión de los dispositivos...
+[03:00:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:00:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:00:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:00:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:01:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:01:27] [INFO] Verificando estado de conexión de los dispositivos...
+[03:01:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:01:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:01:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:01:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:02:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:02:27] [INFO] Verificando estado de conexión de los dispositivos...
+[03:02:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:02:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:02:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:02:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:03:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:03:27] [INFO] Verificando estado de conexión de los dispositivos...
+[03:03:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:03:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:03:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:03:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:04:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:04:27] [INFO] Verificando estado de conexión de los dispositivos...
+[03:04:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:04:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:04:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:04:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:04:30] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:04:30] [INFO] Verificando estado de conexión de los dispositivos...
+[03:04:30] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:04:31] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:04:32] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:04:33] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:04:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:04:35] [INFO] Verificando estado de conexión de los dispositivos...
+[03:04:35] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:04:36] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:04:37] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:04:38] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:04:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:04:40] [INFO] Verificando estado de conexión de los dispositivos...
+[03:04:40] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Conectado
+[03:04:41] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:04:42] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:04:43] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:49:36] [INFO] [MQTT] Conectado exitosamente con código: 0
+[04:41:25] [INFO] [MQTT] Conectado exitosamente con código: 0
+[05:26:50] [INFO] [MQTT] Conectado exitosamente con código: 0
+[05:46:59] [INFO] [MQTT] Conectado exitosamente con código: 0
+[05:47:49] [INFO] [MQTT] Conectado exitosamente con código: 0
+[05:48:02] [INFO] [MQTT] Conectado exitosamente con código: 0
+[05:52:38] [INFO] [MQTT] Conectado exitosamente con código: 0
+[05:56:56] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:55:27] [INFO] [MQTT] Conectado exitosamente con código: 0
+[12:19:37] [INFO] [MQTT] Conectado exitosamente con código: 0
+[14:23:16] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/1: 
+{
+  "id": "ArduinoRGB",
+  "ip": "192.168.2.22",
+  "hostname
+[14:23:16] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/1
+[14:23:16] [DEBUG] Fragmento #1 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/2: ": "RGB_MQTT",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt"
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/2
+[14:23:17] [DEBUG] Fragmento #2 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/3: ,
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoRGB/analog
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/3
+[14:23:17] [DEBUG] Fragmento #3 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/4: /potR",
+    "ArduinoRGB/analog/potG",
+    "ArduinoRGB/analog
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/4
+[14:23:17] [DEBUG] Fragmento #4 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/5: /potB",
+    "ArduinoRGB/analog/red",
+    "ArduinoRGB/analog/
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/5
+[14:23:17] [DEBUG] Fragmento #5 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/6: green",
+    "ArduinoRGB/analog/blue",
+    "ArduinoRGB/digita
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/6
+[14:23:17] [DEBUG] Fragmento #6 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/7: l/switch"
+  ],
+  "topics_sub": [
+    "ArduinoRGB/analog/PWMr
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/7
+[14:23:17] [DEBUG] Fragmento #7 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/8: ed",
+    "ArduinoRGB/analog/PWMgreen",
+    "ArduinoRGB/analo
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/8
+[14:23:17] [DEBUG] Fragmento #8 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/9: g/PWMblue"
+  ]
+}
+
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/9
+[14:23:17] [DEBUG] Fragmento #9 recibido de ArduinoRGB
+[14:23:17] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/final: <<END>>
+[14:23:17] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/final
+[14:23:17] [WARNING] DEBUG: final recibido para ArduinoRGB
+[14:23:17] [WARNING] DEBUG: claves activas: ['ArduinoRGB']
+[14:23:17] [DEBUG] JSON RECONSTRUIDO COMPLETO para ArduinoRGB:
+
+{
+  "id": "ArduinoRGB",
+  "ip": "192.168.2.22",
+  "hostname": "RGB_MQTT",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoRGB/analog/potR",
+    "ArduinoRGB/analog/potG",
+    "ArduinoRGB/analog/potB",
+    "ArduinoRGB/analog/red",
+    "ArduinoRGB/analog/green",
+    "ArduinoRGB/analog/blue",
+    "ArduinoRGB/digital/switch"
+  ],
+  "topics_sub": [
+    "ArduinoRGB/analog/PWMred",
+    "ArduinoRGB/analog/PWMgreen",
+    "ArduinoRGB/analog/PWMblue"
+  ]
+}
+
+[14:23:17] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:23:17] [DEBUG] Archivo dispositivos.json guardado correctamente.
+[14:23:17] [INFO] Dispositivo 'ArduinoRGB' actualizado con IP 192.168.2.22.
+[14:23:17] [INFO] Dispositivo 'ArduinoRGB' registrado correctamente.
+[15:03:10] [INFO] [MQTT] Conectado exitosamente con código: 0

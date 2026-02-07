@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú - {{ nombre }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/Estaticos/CSS/menu.css">
+
+  <style>
+    .menu-item i {
+      font-size: 2.5em;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HMI - Sistema de Supervisión {{ nombre }}</h1>
+    <p>Bienvenido, Operador</p>
+  </header>
+
+  <div class="menu-container">
+    <div class="menu-item" onclick="location.href='/proyecto/{{ nombre }}/visual'">
+      <i class="fas fa-desktop"></i>
+      <h3>Supervisión en Tiempo Real</h3>
+    </div>
+    <div class="menu-item" onclick="location.href='/proyecto/{{ nombre }}/alarmas'">
+      <i class="fas fa-bell"></i>
+      <h3>Alarmas</h3>
+    </div>
+    <div class="menu-item" onclick="location.href='/proyecto/{{ nombre }}/historial'">
+      <i class="fas fa-chart-line"></i>
+      <h3>Historial</h3>
+    </div>
+    <div class="menu-item" onclick="location.href='/proyecto/{{ nombre }}/editar'">
+      <i class="fas fa-tools"></i>
+      <h3>Editar Proyecto</h3>
+    </div>
+    <div class="menu-item" onclick="location.href='/'">
+      <i class="fas fa-arrow-left"></i>
+      <h3>Salir</h3>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Sistema HMI. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

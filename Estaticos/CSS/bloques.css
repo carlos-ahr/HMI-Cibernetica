@@ -1,0 +1,145 @@
+/* ===== Bloques generales ===== */
+.bloque {
+  position: absolute;
+  cursor: move;
+  min-width: 200px;
+  max-width: 350px;
+  padding: 16px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  touch-action: none;
+  user-select: none;
+  z-index: 1;
+  font-size: 1.1rem;
+}
+
+.bloque:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Etiquetas y texto ===== */
+.etiqueta-topico,
+.nombre-objeto {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #444;
+}
+
+label {
+  font-size: 1rem;
+  display: block;
+  margin-top: 8px;
+}
+
+/* ===== Inputs y selects ===== */
+.bloque input[type="text"],
+.bloque input[type="number"],
+.bloque select,
+.bloque input[type="range"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ===== LED ===== */
+.led {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* ===== Sliders ===== */
+.slider-config {
+  background: #eee;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 5px;
+  display: none;
+}
+
+.bloque:hover .slider-config {
+  display: block;
+}
+
+.bloque input[type="range"] {
+  width: 100%;
+}
+
+/* ===== Gráfica ===== */
+canvas {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* ===== Señales en gráficas ===== */
+.señales-contenedor {
+  margin-top: 14px;
+}
+
+.señales-contenedor label {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.senal {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.senal select,
+.senal input {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* ===== Botón agregar señal ===== */
+.agregar-senal {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.agregar-senal:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Botón eliminar bloque ===== */
+.btn-eliminar-bloque {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 100;
+}
+

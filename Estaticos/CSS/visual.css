@@ -1,0 +1,83 @@
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6fa;
+    overflow: hidden;
+  }
+
+  header {
+    text-align: center;
+    padding: 12px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  #contenedor-bloques {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    padding: 20px;
+    background: #ffffff;
+    border-top: 2px dashed #ccc;
+  }
+
+  .bloque {
+    position: absolute;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: move;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    text-align: center;
+    user-select: none;
+    z-index: 10;
+  }
+
+  .bloque canvas {
+    max-width: 100%;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  .bloque h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #2c3e50;
+  }
+
+  .valor-barra {
+    font-size: 14px;
+    color: #2c3e50;
+    margin-top: 4px;
+  }
+
+  .contenedor-barra {
+    width: 300px;
+    background: #eee;
+    height: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .barra {
+    width: 0%;
+    height: 100%;
+    background: #4caf50;
+  }
+  canvas {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+  display: block;
+}
+</style>

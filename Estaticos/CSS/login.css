@@ -1,0 +1,151 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #5a1f1f;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #ffffff;
+      color: #5a1f1f;
+      border-radius: 8px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #5a1f1f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #441717;
+    }
+
+    .pie {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+
+	body {
+	  font-family: 'Segoe UI', sans-serif;
+	  background: #5a1f1f;
+	  color: #fff;
+	  margin: 0;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  height: 100vh;
+	}
+
+	.login-container {
+	  background: #ffffff;
+	  color: #5a1f1f;
+	  border-radius: 8px;
+	  padding: 40px 30px;
+	  width: 90%;
+	  max-width: 400px;
+	  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	  text-align: center;
+	}
+
+	.login-container img {
+	  width: 80px;
+	  margin-bottom: 15px;
+	}
+
+	h2 {
+	  margin-bottom: 25px;
+	  font-weight: bold;
+	}
+
+	label {
+	  display: block;
+	  margin-bottom: 5px;
+	  font-weight: bold;
+	  text-align: left;
+	}
+
+	input {
+	  width: 100%;
+	  padding: 10px;
+	  margin-bottom: 20px;
+	  border: 1px solid #aaa;
+	  border-radius: 4px;
+	}
+
+	button {
+	  width: 100%;
+	  padding: 12px;
+	  background: #5a1f1f;
+	  color: white;
+	  border: none;
+	  border-radius: 5px;
+	  font-weight: bold;
+	  cursor: pointer;
+	  transition: background 0.3s ease;
+	}
+
+	button:hover {
+	  background: #441717;
+	}
+
+	.pie {
+	  margin-top: 20px;
+	  font-size: 0.8rem;
+	  color: #ccc;
+	}
+
+	.error {
+	  color: red;
+	  margin-bottom: 15px;
+	}

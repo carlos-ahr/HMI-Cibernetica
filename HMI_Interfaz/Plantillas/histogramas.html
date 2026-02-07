@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Histograma - {{ nombre }}</title>
+
+    <!-- Estilo general del sistema -->
+    <link rel="stylesheet" href="/Estaticos/CSS/base_hmi.css">
+
+    <!-- Estilo específico del histograma -->
+    <link rel="stylesheet" href="/Estaticos/CSS/histograma.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="barra-superior">
+        <a href="/proyecto/{{ nombre }}/historial">⟵ Regresar</a>
+        <h2>Histograma del dispositivo <strong>{{ nombre }}</strong></h2>
+        <div></div>
+    </div>
+
+    <div class="contenedor">
+
+        <!-- Formulario de filtros -->
+        <form method="get" action="/proyecto/{{ nombre }}/histograma" class="formulario">
+            <label for="sensor">Sensor:</label>
+            <select name="sensor" id="sensor">
+                <option value="">Seleccionar...</option>
+                {% for s in sensores %}
+                    <option value="{{ s.topico }}" {% if s.topico == sensor_seleccionado %}selected{% endif %}>
+                        {{ s.nombre }} ({{ s.topico }})
+                    </option>
+                {% endfor %}
+            </select>
+
+            <label for="fecha_inicio">Desde:</label>
+            <input type="date" name="fecha_inicio" value="{{ fecha_inicio }}">
+
+            <label for="fecha_fin">Hasta:</label>
+            <input type="date" name="fecha_fin" value="{{ fecha_fin }}">
+
+            <button type="submit">Generar Histograma</button>
+        </form>
+
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+
+        {% if datos_histograma.bins and datos_histograma.frecuencias %}
+            <!-- Panel informativo -->
+            <div class="info-histograma">
+                <p><strong>Sensor:</strong> {{ sensor_seleccionado }}</p>
+                <p><strong>Fechas:</strong>
+                    {% if fecha_inicio %} Desde <strong>{{ fecha_inicio }}</strong>{% endif %}
+                    {% if fecha_fin %} hasta <strong>{{ fecha_fin }}</strong>{% endif %}
+                </p>
+                <p><strong>Valores:</strong> {{ datos_histograma.frecuencias | sum }} totales distribuidos en {{ datos_histograma.bins|length }} intervalos.</p>
+            </div>
+
+            <!-- Estadísticas -->
+            <div class="estadisticas">
+                <div class="tarjeta"><strong>Promedio</strong><br>{{ estadisticas.promedio }}</div>
+                <div class="tarjeta"><strong>Mínimo</strong><br>{{ estadisticas.minimo }}</div>
+                <div class="tarjeta"><strong>Máximo</strong><br>{{ estadisticas.maximo }}</div>
+                <div class="tarjeta"><strong>Desv. Estándar</strong><br>{{ estadisticas.desviacion }}</div>
+                <div class="tarjeta"><strong>Último valor</strong><br>{{ estadisticas.ultimo_valor }}</div>
+                <div class="tarjeta"><strong>Registros</strong><br>{{ estadisticas.total }}</div>
+            </div>
+
+            <!-- Gráfica -->
+            <canvas id="graficaHistograma"></canvas>
+        {% endif %}
+
+    </div>
+
+    <!-- Chart.js -->
+    <!-- MQTT desde archivo local -->
+    <script src="/Estaticos/js/lib/mqtt.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="/Estaticos/js/chart.js"></script>
+    <script>
+        {% if datos_histograma.bins and datos_histograma.frecuencias %}
+            const ctx = document.getElementById('graficaHistograma').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: {{ datos_histograma.bins|tojson }},
+                    datasets: [{
+                        label: 'Frecuencia',
+                        data: {{ datos_histograma.frecuencias|tojson }},
+                        backgroundColor: '#3498db'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            ticks: {
+                                font: {
+                                    size: 18
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Intervalos',
+                                font: {
+                                    size: 20
+                                }
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                font: {
+                                    size: 18
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Frecuencia',
+                                font: {
+                                    size: 20
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                font: {
+                                    size: 20
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        {% endif %}
+    </script>
+</body>
+</html>

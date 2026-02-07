@@ -1,0 +1,18 @@
+{
+  "id": "ArduinoControl",
+  "ip": "192.168.2.27",
+  "hostname": "PrimerProg",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoControl/analog/pot1",
+    "ArduinoControl/analog/pot2",
+    "ArduinoControl/digital/interruptor"
+  ],
+  "topics_sub": [
+    "ArduinoControl/digital/led_control"
+  ],
+  "usuario": "poopop",
+  "titulo": "Primer Programa"
+}

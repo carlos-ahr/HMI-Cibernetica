@@ -1,0 +1,18 @@
+[13:56:46] [INFO] [MQTT] Conectado exitosamente con código: 0
+[14:45:44] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:45:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:45:57] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:46:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:59:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:59:47] [INFO] Verificando estado de conexión de los dispositivos...
+[14:59:48] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[14:59:49] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[14:59:50] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[14:59:51] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[14:59:51] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[15:00:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[16:04:23] [INFO] [MQTT] Conectado exitosamente con código: 0
+[16:22:46] [INFO] [MQTT] Conectado exitosamente con código: 0
+[16:23:00] [INFO] [MQTT] Conectado exitosamente con código: 0
+[16:34:50] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[17:47:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.

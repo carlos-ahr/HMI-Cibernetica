@@ -1,0 +1,67 @@
+{
+  "bloques": [
+    {
+      "tipo": "tipo-slider",
+      "x": "97.40628051757812",
+      "y": "-5.75",
+      "nombre": "Sin nombre (0)",
+      "topicoSub": null,
+      "valor": "0",
+      "valorMin": "0",
+      "valorMax": "255",
+      "nombreVisible": ""
+    },
+    {
+      "tipo": "tipo-led",
+      "x": "100.20431518554688",
+      "y": "160.0810317993164",
+      "nombre": "Sin t\u00f3pico",
+      "topicoPub": null,
+      "colorOn": "#00ff00"
+    },
+    {
+      "tipo": "tipo-slider",
+      "x": "307.0437403409546",
+      "y": "275.46755663260814",
+      "nombre": "(89)",
+      "topicoSub": null,
+      "valor": "89",
+      "valorMin": "0",
+      "valorMax": "255",
+      "nombreVisible": ""
+    },
+    {
+      "tipo": "tipo-barra-progreso",
+      "x": "403.8181468943882",
+      "y": "75.60903256303203",
+      "nombre": "Barra de progreso",
+      "topicoPub": null,
+      "color": "#4caf50",
+      "min": "0",
+      "max": "100"
+    },
+    {
+      "tipo": "tipo-boton",
+      "x": "43",
+      "y": "279",
+      "nombre": "Bot\u00f3n",
+      "topicoSub": null,
+      "estado": false
+    },
+    {
+      "tipo": "tipo-grafica",
+      "x": "734.5690380521404",
+      "y": "271.88252298188115",
+      "nombre": "Gr\u00e1fica",
+      "senales": []
+    },
+    {
+      "tipo": "tipo-texto-enviar",
+      "x": "3.2894287109375",
+      "y": "942.2292098999023",
+      "nombre": "Texto a enviar",
+      "topicoSub": null,
+      "valor": ""
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+[00:32:46] [INFO] [MQTT] Conectado exitosamente con código: 0
+[04:14:10] [INFO] [MQTT] Conectado exitosamente con código: 0
+[08:56:21] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:00:16] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:14:19] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:15:19] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:16:08] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:17:20] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:22:13] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:23:08] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:23:57] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:24:12] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:26:39] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:29:37] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:31:13] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:32:45] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:34:53] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:39:04] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:41:26] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:46:16] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:47:45] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:48:30] [INFO] [MQTT] Conectado exitosamente con código: 0
+[09:57:20] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/1: 
+{
+  "id": "ArduinoControl",
+  "ip": "192.168.2.27",
+  "host
+[09:57:20] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/1
+[09:57:20] [DEBUG] Fragmento #1 recibido de ArduinoControl
+[09:57:20] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/2: name": "PrimerProg",
+  "tipo": "Arduino",
+  "comunicacion": 
+[09:57:20] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/2
+[09:57:20] [DEBUG] Fragmento #2 recibido de ArduinoControl
+[09:57:20] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/3: "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoCont
+[09:57:20] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/3
+[09:57:20] [DEBUG] Fragmento #3 recibido de ArduinoControl
+[09:57:20] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/4: rol/analog/pot1",
+    "ArduinoControl/analog/pot2",
+    "Ard
+[09:57:20] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/4
+[09:57:20] [DEBUG] Fragmento #4 recibido de ArduinoControl
+[09:57:20] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/5: uinoControl/digital/interruptor"
+  ],
+  "topics_sub": [
+    
+[09:57:20] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/5
+[09:57:20] [DEBUG] Fragmento #5 recibido de ArduinoControl
+[09:57:20] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/6: "ArduinoControl/digital/led_control"
+  ]
+}
+
+[09:57:20] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/6
+[09:57:20] [DEBUG] Fragmento #6 recibido de ArduinoControl
+[09:57:20] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/final: <<END>>
+[09:57:20] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/final
+[09:57:20] [WARNING] DEBUG: final recibido para ArduinoControl
+[09:57:20] [WARNING] DEBUG: claves activas: ['ArduinoControl']
+[09:57:20] [DEBUG] JSON RECONSTRUIDO COMPLETO para ArduinoControl:
+
+{
+  "id": "ArduinoControl",
+  "ip": "192.168.2.27",
+  "hostname": "PrimerProg",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoControl/analog/pot1",
+    "ArduinoControl/analog/pot2",
+    "ArduinoControl/digital/interruptor"
+  ],
+  "topics_sub": [
+    "ArduinoControl/digital/led_control"
+  ]
+}
+
+[09:57:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[09:57:20] [DEBUG] Archivo dispositivos.json guardado correctamente.
+[09:57:20] [INFO] Dispositivo 'ArduinoControl' actualizado con IP 192.168.2.27.
+[09:57:20] [INFO] Dispositivo 'ArduinoControl' registrado correctamente.
+[10:34:04] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:34:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:34:07] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:34:08] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:34:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:34:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:39] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:42] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:50:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:17:31] [INFO] [MQTT] Conectado exitosamente con código: 0

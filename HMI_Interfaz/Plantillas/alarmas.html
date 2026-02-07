@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Alarmas – {{ nombre }} </title>
+  
+  <!-- Estilos unificados -->
+  <link rel="stylesheet" href="/Estaticos/CSS/base_hmi.css">
+  <link rel="stylesheet" href="/Estaticos/CSS/alertas_estilo.css">
+
+  <!-- MQTT GLOBAL -->
+  <script src="/Estaticos/js/lib/mqtt.min.js"></script>
+  <script type="module" src="/Estaticos/js/alarmas_hmiC/main_alertas.js"></script>
+
+  <!-- Script para cargar la configuración actual -->
+  <script>
+    const nombreProyecto = "{{ nombre }}";
+    window.nombreProyecto = nombreProyecto;
+    window.configAlertaCargada = {};
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const respuesta = await fetch(`/proyecto/${nombreProyecto}/config_alertas`);
+        if (respuesta.ok) {
+          const data = await respuesta.json();
+          window.configAlertaCargada = data;
+          console.log("[CONFIG ALERTAS] Cargada:", data);
+        } else {
+          console.warn("[CONFIG ALERTAS] No se pudo cargar la configuración previa");
+        }
+      } catch (error) {
+        console.error("[ERROR] Al obtener config_alertas:", error);
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <!-- NUEVA BARRA SUPERIOR -->
+  <div class="barra-superior">
+    <a href="/proyecto/{{ nombre }}/menu">⟵ Volver al Menú</a>
+    <h2>Panel de Alarmas – {{ nombre }}</h2>
+    <div>
+      <button id="guardar-configuracion" class="boton-admin">Guardar Configuración</button>
+      <a href="/proyecto/{{ nombre }}/historial_alarmas" class="boton-secundario">Ver Historial</a>
+    </div>
+  </div>
+
+  <!-- CONTENEDOR DINÁMICO DE ALERTAS -->
+  <div id="contenedor-prioritaria"></div>
+</body>
+</html>

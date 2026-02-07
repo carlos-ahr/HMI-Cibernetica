@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #eef2f7;
+  color: #2e3a59;
+  margin: 0;
+  padding: 40px;
+  font-size: 1.6rem;
+}
+
+.contenedor {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1c2e4a;
+  font-size: 2.4rem;
+}
+
+.dispositivo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7fafc;
+  border: 1px solid #d6dee9;
+  border-left: 6px solid #2e4b70;
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.dispositivo:hover {
+  background-color: #eef5fb;
+}
+
+.dispositivo-info {
+  font-size: 1.7rem;
+  color: #1c2e4a;
+}
+
+.boton-crear {
+  background-color: #2e4b70;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton-crear:hover {
+  background-color: #3d5d91;
+}
+
+.mensaje {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #7a859b;
+  margin-top: 40px;
+}
+
+.btn-volver-index {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  background-color: #3e5871;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-volver-index:hover {
+  background-color: #57708a;
+}
+

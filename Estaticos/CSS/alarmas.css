@@ -1,0 +1,60 @@
+/* ========== PANEL DE ALARMAS ESPECÍFICO ========== */
+
+.encabezado-alertas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.encabezado-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.encabezado-izquierda h2 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.encabezado-izquierda p {
+  font-size: 1.6rem;
+  color: #dcdde1;
+}
+
+.encabezado-derecha {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-ir-menu,
+.btn-ir-historial,
+.btn-guardar-config {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-ir-menu:hover,
+.btn-ir-historial:hover,
+.btn-guardar-config:hover {
+  background-color: #2980b9;
+}
+
+#contenedor-prioritaria {
+  margin-top: 40px;
+}
+

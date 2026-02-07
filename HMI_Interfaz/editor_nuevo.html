@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editor HMI</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/Estaticos/CSS/editor_hmi.css">
+  <link rel="stylesheet" href="/Estaticos/CSS/bloques.css">
+
+  <!-- MQTT desde archivo local -->
+  <script src="/Estaticos/js/lib/mqtt.min.js"></script>
+
+  <!-- Interact.js para drag & drop -->
+  <script src="/Estaticos/js/lib/interact.min.js"></script>
+  <script src="/Estaticos/js/editor_hmiC/editor_dragdrop.js" type="module"></script>
+
+  <!-- Inyección del nombre del dispositivo (desde Flask) -->
+  <script>
+    window.nombreDispositivo = "{{ nombre }}";
+  </script>
+
+  <!-- Chart.js -->
+  <script src="/Estaticos/js/chart.js"></script>
+
+  <!-- Scripts en orden lógico -->
+  <script src="/Estaticos/js/editor_hmiC/mqtt_cliente.js" type="module"></script>
+  <script src="/Estaticos/js/editor_hmiC/mqtt_receptor.js" type="module"></script>
+  <script src="/Estaticos/js/editor_hmiC/cargar_topicos.js" type="module"></script>
+  <script src="/Estaticos/js/editor_hmiC/cargar_hmiJ.js" type="module"></script>
+  <script src="/Estaticos/js/editor_hmiC/main_editor.js" type="module"></script>
+
+  <style>
+    .btn-menu-regresar {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      color: white;
+      text-decoration: none;
+      background-color: #34495e;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn-menu-regresar:hover {
+      background-color: #1abc9c;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Botón de regreso al menú -->
+  <a href="/proyecto/{{ nombre }}/menu" class="btn-menu-regresar">⟵ Menú principal</a>
+
+  <!-- Barra lateral de herramientas -->
+  <div id="barra-herramientas">
+    <h3>Herramientas</h3>
+    <button id="btn-agregar-guardar">Guardar</button>
+    <button id="btn-agregar-slider">Slider</button>
+    <button id="btn-agregar-led">Indicador</button>
+    <button id="btn-agregar-grafica">Gráfica</button>
+    <!--<button id="btn-agregar-alarma">Alarma</button>-->
+    <button id="btn-agregar-boton">Botón</button>
+    <button id="btn-agregar-texto">Cuadro de Texto</button>
+    <button id="btn-agregar-num">Cuadro Numérico</button>
+    <button id="btn-agregar-pasos">Selector de Pasos</button>
+    <button id="btn-agregar-gauge">Gauge</button>
+    <button id="btn-agregar-barra">Barra de Progreso</button>
+    <button id="btn-agregar-termo">Termómetro</button>
+    <button id="btn-agregar-rpm">Rotatorio</button>
+    <!--  <button id="btn-agregar-fuzzy">Fuzzy</button>  -->
+    <!-- <button id="btn-agregar-contador">Contador</button>-->
+  </div>
+
+  <!-- Área de edición principal -->
+  <div id="area-edicion">
+    <h2>Área de diseño</h2>
+
+    <!-- Aquí se agregan los bloques -->
+    <div id="editor"></div>
+
+    <!-- Panel lateral de propiedades -->
+    <div id="panel-propiedades" style="display: none;">
+      <h4>Propiedades</h4>
+      <div id="contenido-propiedades">
+        <p>Selecciona un bloque para ver sus propiedades.</p>
+      </div>
+      <button id="cerrar-panel">Cerrar</button>
+    </div>
+  </div>
+
+</body>
+</html>

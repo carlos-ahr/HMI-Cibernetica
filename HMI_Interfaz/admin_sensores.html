@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrar Sensores</title>
+    
+    <link rel="stylesheet" href="/Estaticos/CSS/tabla_datos.css">
+</head>
+<body>
+    <h1>Administración de Sensores</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Dispositivo</th>
+                <th>Tópico</th>
+                <th>Variable</th>
+                <th>Nombre Visible</th>
+                <th>Unidad</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sensor in sensores %}
+            <tr>
+                <form action="/actualizar_sensor" method="POST">
+                    <input type="hidden" name="sensor_id" value="{{ sensor[0] }}">
+                    <td>{{ sensor[1] }}</td>
+                    <td>{{ sensor[3] }}</td>
+                    <td>{{ sensor[3].split('/')[-1] }}</td>
+                    <td>
+                        <input type="text" name="nombre" value="{{ sensor[2] }}">
+                    </td>
+                    <td>
+                        <select name="unidad">
+                            {% set unidades = ["°C", "°F", "%", "V", "A", "Ω", "W", "kWh", "Hz", "mm", "cm", "m", "Pa", "bar", "psi", "L/min", "s", "ms", "--", "custom"] %}
+                            {% for u in unidades %}
+                                <option value="{{ u }}" {% if u == sensor[4] %}selected{% endif %}>{{ u }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                    <td><button type="submit">Guardar</button></td>
+                </form>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

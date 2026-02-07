@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear Proyecto – HMI</title>
+
+  <link rel="stylesheet" href="/Estaticos/CSS/crear_proyecto.css">
+  <link rel="icon" href="/Estaticos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="contenedor">
+    <h2>Crear Proyecto</h2>
+    <a href="/" class="btn-volver-index">⟵ Volver al Inicio</a>
+
+    {% if dispositivos %}
+      {% for nombre, info in dispositivos.items() %}
+        <div class="dispositivo">
+          <div class="dispositivo-info">
+            <strong>{{ nombre }}</strong> — {{ info.tipo }} ({{ info.ip }})
+          </div>
+          <form method="GET" action="/login">
+            <button type="submit" class="boton-crear">Crear Proyecto</button>
+          </form>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="mensaje">No hay dispositivos disponibles sin proyecto asociado.</p>
+    {% endif %}
+  </div>
+</body>
+</html>

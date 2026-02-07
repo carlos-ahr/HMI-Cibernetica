@@ -1,0 +1,79 @@
+{
+    "ArduinoRGB": {
+        "id": "ArduinoRGB",
+        "ip": "192.168.100.123",
+        "hostname": "RGB_MQTT",
+        "tipo": "Arduino",
+        "comunicacion": "mqtt",
+        "puerto": 1883,
+        "topics_pub": [
+            "ArduinoRGB/analog/potR",
+            "ArduinoRGB/analog/potG",
+            "ArduinoRGB/analog/potB",
+            "ArduinoRGB/analog/red",
+            "ArduinoRGB/analog/green",
+            "ArduinoRGB/analog/blue",
+            "ArduinoRGB/digital/switch"
+        ],
+        "topics_sub": [
+            "ArduinoRGB/analog/PWMred",
+            "ArduinoRGB/analog/PWMgreen",
+            "ArduinoRGB/analog/PWMblue"
+        ]
+    },
+    "ESP32_FUZZY": {
+        "id": "ESP32_FUZZY",
+        "ip": "192.168.0.144",
+        "hostname": "FUZZY_DH11",
+        "tipo": "ESP32",
+        "comunicacion": "mqtt",
+        "puerto": 1883,
+        "topics_pub": [
+            "ESP32_FUZZY/digital/estado_sensor",
+            "ESP32_FUZZY/analog/temperatura",
+            "ESP32_FUZZY/analog/humedad",
+            "ESP32_FUZZY/analog/pwm",
+            "ESP32_FUZZY/cadena/nivel",
+            "ESP32_FUZZY/array/led",
+            "ESP32_FUZZY/cadena/w1",
+            "ESP32_FUZZY/cadena/w2",
+            "ESP32_FUZZY/cadena/w3"
+        ],
+        "topics_sub": []
+    },
+    "ESP32_PID": {
+        "id": "ESP32_PID",
+        "ip": "192.168.1.53",
+        "hostname": "PID_MOTOR",
+        "tipo": "ESP32",
+        "comunicacion": "mqtt",
+        "puerto": 1883,
+        "topics_pub": [
+            "analog/setpoint_actual",
+            "analog/medida",
+            "analog/salidaPID"
+        ],
+        "topics_sub": [
+            "analog/setpoint",
+            "analog/kp",
+            "analog/ki",
+            "analog/kd"
+        ]
+    },
+    "ArduinoControl": {
+        "id": "ArduinoControl",
+        "ip": "192.168.2.27",
+        "hostname": "PrimerProg",
+        "tipo": "Arduino",
+        "comunicacion": "mqtt",
+        "puerto": 1883,
+        "topics_pub": [
+            "ArduinoControl/analog/pot1",
+            "ArduinoControl/analog/pot2",
+            "ArduinoControl/digital/interruptor"
+        ],
+        "topics_sub": [
+            "ArduinoControl/digital/led_control"
+        ]
+    }
+}

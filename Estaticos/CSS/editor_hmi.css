@@ -1,0 +1,251 @@
+/* ===== Estilo general ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6fa;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  color: #2c3e50;
+  margin: 10px;
+  font-size: 110%;
+}
+
+/* ===== Barra lateral de herramientas ===== */
+#barra-herramientas {
+  width: 275px; /* antes 250px */
+  height: 100vh;
+  background: #2c3e50;
+  color: white;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding: 16.5px; /* antes 15px */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#barra-herramientas h3 {
+  color: #ecf0f1;
+  margin-bottom: 16.5px;
+  font-size: 110%;
+}
+
+#barra-herramientas button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 18px 24px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 1000; /* más grueso */
+  transition: background 0.3s ease;
+}
+
+#barra-herramientas button:hover {
+  background: #2980b9;
+}
+
+/* ===== Área de edición ===== */
+#area-edicion {
+  margin-left: 275px;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#editor {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  padding: 22px; /* antes 20px */
+  background: #ffffff;
+  border: 2px dashed #ccc;
+  overflow: auto;
+}
+
+/* ===== Panel lateral de propiedades ===== */
+#panel-propiedades {
+  position: fixed;
+  top: 55px;
+  right: 33px;
+  width: 286px; /* antes 260px */
+  max-height: 550px;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 22px;
+  border-radius: 11px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+#panel-propiedades h3 {
+  margin-top: 0;
+  margin-bottom: 16.5px;
+  font-size: 19.8px;
+  color: #ecf0f1;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 5.5px;
+}
+
+#panel-propiedades label {
+  margin-top: 11px;
+  font-weight: bold;
+  color: #bdc3c7;
+  font-size: 110%;
+}
+
+#panel-propiedades input[type="text"],
+#panel-propiedades input[type="number"],
+#panel-propiedades select {
+  width: 100%;
+  padding: 8.8px;
+  margin-top: 5.5px;
+  margin-bottom: 11px;
+  border: none;
+  border-radius: 4.4px;
+  font-size: 15.4px;
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+#cerrar-panel {
+  align-self: flex-end;
+  padding: 6.6px 13.2px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4.4px;
+  cursor: pointer;
+  font-size: 14.3px;
+  margin-top: 11px;
+  transition: background 0.2s ease;
+}
+
+#cerrar-panel:hover {
+  background: #c0392b;
+}
+
+/* ===== Bloques visuales ===== */
+.bloque {
+  position: absolute;
+  padding: 11px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5.5px;
+  cursor: move;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  min-width: 132px;
+  text-align: center;
+  user-select: none;
+  z-index: 10;
+}
+
+.bloque .led {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 5.5px;
+}
+
+.bloque input[type="range"] {
+  width: 100%;
+}
+
+.bloque .valor-num {
+  margin-top: 5.5px;
+  font-size: 15.4px;
+  color: #2c3e50;
+}
+
+/* ===== Botón eliminar bloque ===== */
+.btn-eliminar-bloque {
+  position: absolute;
+  top: 4.4px;
+  right: 4.4px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-weight: bold;
+}cursor: pointer;
+  z-index: 100;
+}
+
+.btn-eliminar-bloque:hover {
+  background: darkred;
+}
+
+/* ===== Otros ===== */
+.slider-config,
+.señales-contenedor {
+  margin-top: 12px;
+}
+
+.slider-config label,
+.señales-contenedor label {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+.slider-config input,
+.señales-contenedor input,
+.señales-contenedor select {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+canvas {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.agregar-senal {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.agregar-senal:hover {
+  background-color: #0056b3;
+}
+
+.senal {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.senal select,
+.senal input {
+  flex: 1;
+  min-width: 100px;
+}
+
+.modo-visual .editor-only {
+  display: none !important;
+}
+

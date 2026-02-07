@@ -1,0 +1,102 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #eef2f7;
+    color: #2e3a59;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1d3557;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:hover {
+    background-color: #f1f9ff;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #2e3a59;
+    font-size: 14px;
+}
+
+button,
+.boton-admin,
+.boton-secundario {
+    background-color: #219ebc;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.boton-admin:hover,
+.boton-secundario:hover {
+    background-color: #126782;
+}
+
+.boton-admin {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 30px;
+    text-align: center;
+}
+
+.filtros-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+}
+
+.filtro-grupo {
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro-grupo label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #1d3557;
+}
+

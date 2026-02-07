@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HMI Visual - {{ nombre }}</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/Estaticos/CSS/bloques.css">
+  <link rel="stylesheet" href="/Estaticos/CSS/visual.css">
+  <link rel="icon" href="/Estaticos/favicon.ico" type="image/x-icon">
+
+  <!-- MQTT desde archivo local -->
+  <script src="/Estaticos/js/lib/mqtt.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="/Estaticos/js/chart.js"></script>
+
+  <!-- Render principal -->
+  <script type="module" src="/Estaticos/js/visual_hmiC/visual_render.js"></script>
+
+  <style>
+    .btn-menu-regresar {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+      color: white;
+      text-decoration: none;
+      background-color: #34495e;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-menu-regresar:hover {
+      background-color: #1abc9c;
+    }
+
+    header {
+      padding-left: 140px; /* espacio para no tapar el botón */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botón de regreso al menú -->
+  <a href="/proyecto/{{ nombre }}/menu" class="btn-menu-regresar">⟵ Menú principal</a>
+
+  <header>
+    <h2>HMI Visual: {{ nombre }}</h2>
+  </header>
+
+  <div id="contenedor-bloques"></div>
+
+  <!-- Carga de bloques desde JSON del proyecto -->
+  <script type="module">
+    import { renderizarBloques } from "/Estaticos/js/visual_hmiC/visual_render.js";
+
+    const nombreProyecto = "{{ nombre }}";
+    window.nombreProyecto = nombreProyecto;  // Para que todos los renders accedan
+
+    fetch("/cargar_hmi/" + nombreProyecto)
+      .then(res => res.json())
+      .then(data => {
+        renderizarBloques(data.bloques || []);
+      })
+      .catch(err => {
+        console.error("Error cargando HMI:", err);
+      });
+  </script>
+</body>
+</html>

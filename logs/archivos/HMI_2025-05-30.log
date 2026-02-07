@@ -1,0 +1,561 @@
+[00:49:40] [INFO] [MQTT] Conectado exitosamente con código: 0
+[00:52:08] [INFO] [MQTT] Conectado exitosamente con código: 0
+[00:56:05] [INFO] [MQTT] Conectado exitosamente con código: 0
+[00:58:38] [INFO] [MQTT] Conectado exitosamente con código: 0
+[01:01:18] [INFO] [MQTT] Conectado exitosamente con código: 0
+[01:01:49] [INFO] [MQTT] Conectado exitosamente con código: 0
+[01:05:41] [INFO] [MQTT] Conectado exitosamente con código: 0
+[01:05:54] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:05:57] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:06:52] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:06:52] [INFO] Verificando estado de conexión de los dispositivos...
+[01:06:53] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:06:54] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:06:55] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:06:56] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:06:56] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[01:06:59] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:07:00] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:07:00] [DEBUG] [ARP] Dispositivos detectados por ip neigh: {'192.168.1.10', '192.168.1.3', '192.168.1.5', '192.168.1.7', '192.168.1.6', '192.168.1.2', '192.168.1.8', '192.168.1.9', '192.168.1.1', 'fe80::1'}
+[01:07:01] [INFO] [Análisis Red] Resultados: {'activos': [], 'inactivos': ['192.168.1.53'], 'nuevos_no_registrados': ['192.168.1.12']}
+[01:07:38] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:07:38] [INFO] Verificando estado de conexión de los dispositivos...
+[01:07:39] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:07:40] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:07:41] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:07:42] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:07:42] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[01:09:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:09:21] [INFO] Verificando estado de conexión de los dispositivos...
+[01:09:22] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:09:23] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:09:24] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:09:25] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:09:25] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[01:09:37] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:09:37] [INFO] Verificando estado de conexión de los dispositivos...
+[01:09:38] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:09:39] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:09:40] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:09:41] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:09:41] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[01:12:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:12:05] [INFO] Verificando estado de conexión de los dispositivos...
+[01:12:06] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:12:07] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:12:08] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:12:09] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:12:09] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[01:16:40] [INFO] [MQTT] Conectado exitosamente con código: 0
+[01:16:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:16:47] [INFO] Verificando estado de conexión de los dispositivos...
+[01:16:48] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:16:49] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:16:50] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:16:51] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:16:51] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[01:16:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:16:56] [INFO] Verificando estado de conexión de los dispositivos...
+[01:16:57] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:16:58] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:16:59] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:17:00] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:17:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:17:01] [INFO] Verificando estado de conexión de los dispositivos...
+[01:17:02] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:17:03] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:17:04] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:17:05] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:17:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:17:06] [INFO] Verificando estado de conexión de los dispositivos...
+[01:17:07] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[01:17:08] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[01:17:09] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[01:17:10] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[01:17:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[01:17:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:21:18] [INFO] [MQTT] Conectado exitosamente con código: 0
+[02:49:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:49] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[02:49:49] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:22:17] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:22:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:22:43] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:22:44] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:22:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:22:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:37:12] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:37:12] [INFO] Verificando estado de conexión de los dispositivos...
+[03:37:13] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[03:37:14] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:37:15] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:37:16] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:37:16] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[03:37:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:37:21] [INFO] Verificando estado de conexión de los dispositivos...
+[03:37:22] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[03:37:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:37:23] [INFO] Verificando estado de conexión de los dispositivos...
+[03:37:23] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:37:24] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[03:37:24] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:37:25] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:37:25] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:37:26] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:37:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:37:26] [INFO] Verificando estado de conexión de los dispositivos...
+[03:37:27] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:37:27] [INFO] DISPOSITIVOS CON ESTADO: [{'nombre': 'ArduinoRGB', 'info': {'id': 'ArduinoRGB', 'ip': '192.168.2.22', 'hostname': 'RGB_MQTT', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoRGB/analog/potR', 'ArduinoRGB/analog/potG', 'ArduinoRGB/analog/potB', 'ArduinoRGB/analog/red', 'ArduinoRGB/analog/green', 'ArduinoRGB/analog/blue', 'ArduinoRGB/digital/switch'], 'topics_sub': ['ArduinoRGB/analog/PWMred', 'ArduinoRGB/analog/PWMgreen', 'ArduinoRGB/analog/PWMblue']}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_FUZZY', 'info': {'id': 'ESP32_FUZZY', 'ip': '192.168.5.44', 'hostname': 'FUZZY_DH11', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['digital/estado_sensor', 'analog/temperatura', 'analog/humedad', 'analog/pwm', 'cadena/nivel', 'array/led', 'cadena/w1', 'cadena/w2', 'cadena/w3'], 'topics_sub': []}, 'estado': 'Desconectado'}, {'nombre': 'ESP32_PID', 'info': {'id': 'ESP32_PID', 'ip': '192.168.1.53', 'hostname': 'PID_MOTOR', 'tipo': 'ESP32', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['analog/setpoint_actual', 'analog/medida', 'analog/salidaPID'], 'topics_sub': ['analog/setpoint', 'analog/kp', 'analog/ki', 'analog/kd']}, 'estado': 'Desconectado'}, {'nombre': 'ArduinoControl', 'info': {'id': 'ArduinoControl', 'ip': '192.168.2.27', 'hostname': 'PrimerProg', 'tipo': 'Arduino', 'comunicacion': 'mqtt', 'puerto': 1883, 'topics_pub': ['ArduinoControl/analog/pot1', 'ArduinoControl/analog/pot2', 'ArduinoControl/digital/interruptor'], 'topics_sub': ['ArduinoControl/digital/led_control']}, 'estado': 'Desconectado'}]
+[03:37:27] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[03:37:28] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:37:29] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:37:30] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:37:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:37:32] [INFO] Verificando estado de conexión de los dispositivos...
+[03:37:33] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[03:37:34] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:37:35] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:37:36] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:37:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:37:36] [INFO] Verificando estado de conexión de los dispositivos...
+[03:37:37] [DEBUG] Dispositivo: ArduinoRGB | IP: 192.168.2.22 | Estado: Desconectado
+[03:37:38] [DEBUG] Dispositivo: ESP32_FUZZY | IP: 192.168.5.44 | Estado: Desconectado
+[03:37:39] [DEBUG] Dispositivo: ESP32_PID | IP: 192.168.1.53 | Estado: Desconectado
+[03:37:40] [DEBUG] Dispositivo: ArduinoControl | IP: 192.168.2.27 | Estado: Desconectado
+[03:39:39] [INFO] [MQTT] Conectado exitosamente con código: 0
+[03:47:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:28] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:30] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:53] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:53] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:57] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:47:57] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:48:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[03:48:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:40:30] [INFO] [MQTT] Conectado exitosamente con código: 0
+[10:40:43] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:40:43] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:40:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:46:37] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:46:37] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:46:41] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:46:42] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:46:44] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:46:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:46:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:48:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:48:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:51:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:51:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:51:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:53:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:53:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:54:34] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:03] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:04] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:17] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/1: 
+{
+  "id": "ArduinoRGB",
+  "ip": "192.168.2.22",
+  "hostname
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/1
+[10:56:58] [DEBUG] Fragmento #1 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/2: ": "RGB_MQTT",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt"
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/2
+[10:56:58] [DEBUG] Fragmento #2 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/3: ,
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoRGB/analog
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/3
+[10:56:58] [DEBUG] Fragmento #3 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/4: /potR",
+    "ArduinoRGB/analog/potG",
+    "ArduinoRGB/analog
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/4
+[10:56:58] [DEBUG] Fragmento #4 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/5: /potB",
+    "ArduinoRGB/analog/red",
+    "ArduinoRGB/analog/
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/5
+[10:56:58] [DEBUG] Fragmento #5 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/6: green",
+    "ArduinoRGB/analog/blue",
+    "ArduinoRGB/digita
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/6
+[10:56:58] [DEBUG] Fragmento #6 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/7: l/switch"
+  ],
+  "topics_sub": [
+    "ArduinoRGB/analog/PWMr
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/7
+[10:56:58] [DEBUG] Fragmento #7 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/8: ed",
+    "ArduinoRGB/analog/PWMgreen",
+    "ArduinoRGB/analo
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/8
+[10:56:58] [DEBUG] Fragmento #8 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/9: g/PWMblue"
+  ]
+}
+
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/9
+[10:56:58] [DEBUG] Fragmento #9 recibido de ArduinoRGB
+[10:56:58] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/final: <<END>>
+[10:56:58] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/final
+[10:56:58] [WARNING] DEBUG: final recibido para ArduinoRGB
+[10:56:58] [WARNING] DEBUG: claves activas: ['ArduinoRGB']
+[10:56:58] [DEBUG] JSON RECONSTRUIDO COMPLETO para ArduinoRGB:
+
+{
+  "id": "ArduinoRGB",
+  "ip": "192.168.2.22",
+  "hostname": "RGB_MQTT",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoRGB/analog/potR",
+    "ArduinoRGB/analog/potG",
+    "ArduinoRGB/analog/potB",
+    "ArduinoRGB/analog/red",
+    "ArduinoRGB/analog/green",
+    "ArduinoRGB/analog/blue",
+    "ArduinoRGB/digital/switch"
+  ],
+  "topics_sub": [
+    "ArduinoRGB/analog/PWMred",
+    "ArduinoRGB/analog/PWMgreen",
+    "ArduinoRGB/analog/PWMblue"
+  ]
+}
+
+[10:56:58] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:56:58] [DEBUG] Archivo dispositivos.json guardado correctamente.
+[10:56:58] [INFO] Dispositivo 'ArduinoRGB' actualizado con IP 192.168.2.22.
+[10:56:58] [INFO] Dispositivo 'ArduinoRGB' registrado correctamente.
+[10:57:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:57:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:58:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:58:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:58:58] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:59:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:59:03] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:59:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:59:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:59:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:44] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:46] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:49] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:00:51] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:02] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:02] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:52] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:52] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:01:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:12] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:13] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:38] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:02:51] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:17] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:49] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:50] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:53] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:04:59] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:05:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:05:03] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:06:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:06:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:06:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:06:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:00:38] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:00:38] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:00:43] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:00:43] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:00:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:16:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:16:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:16:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:16:27] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/1: 
+{
+  "id": "ArduinoControl",
+  "ip": "192.168.2.27",
+  "host
+[12:16:27] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/1
+[12:16:27] [DEBUG] Fragmento #1 recibido de ArduinoControl
+[12:16:27] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/2: name": "PrimerProg",
+  "tipo": "Arduino",
+  "comunicacion": 
+[12:16:27] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/2
+[12:16:27] [DEBUG] Fragmento #2 recibido de ArduinoControl
+[12:16:27] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/3: "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoCont
+[12:16:27] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/3
+[12:16:27] [DEBUG] Fragmento #3 recibido de ArduinoControl
+[12:16:27] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/4: rol/analog/pot1",
+    "ArduinoControl/analog/pot2",
+    "Ard
+[12:16:27] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/4
+[12:16:27] [DEBUG] Fragmento #4 recibido de ArduinoControl
+[12:16:27] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/5: uinoControl/digital/interruptor"
+  ],
+  "topics_sub": [
+    
+[12:16:27] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/5
+[12:16:27] [DEBUG] Fragmento #5 recibido de ArduinoControl
+[12:16:27] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/6: "ArduinoControl/digital/led_control"
+  ]
+}
+
+[12:16:27] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/6
+[12:16:27] [DEBUG] Fragmento #6 recibido de ArduinoControl
+[12:16:27] [DEBUG] [MQTT] dispositivos/registro/ArduinoControl/final: <<END>>
+[12:16:27] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoControl/final
+[12:16:27] [WARNING] DEBUG: final recibido para ArduinoControl
+[12:16:27] [WARNING] DEBUG: claves activas: ['ArduinoControl']
+[12:16:27] [DEBUG] JSON RECONSTRUIDO COMPLETO para ArduinoControl:
+
+{
+  "id": "ArduinoControl",
+  "ip": "192.168.2.27",
+  "hostname": "PrimerProg",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoControl/analog/pot1",
+    "ArduinoControl/analog/pot2",
+    "ArduinoControl/digital/interruptor"
+  ],
+  "topics_sub": [
+    "ArduinoControl/digital/led_control"
+  ]
+}
+
+[12:16:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:16:27] [DEBUG] Archivo dispositivos.json guardado correctamente.
+[12:16:27] [INFO] Dispositivo 'ArduinoControl' actualizado con IP 192.168.2.27.
+[12:16:27] [INFO] Dispositivo 'ArduinoControl' registrado correctamente.
+[12:16:51] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:16:53] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:00] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:07] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:08] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:12] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:13] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:17] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:17:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:24:57] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:00] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:37] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:42] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:25:43] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:26:37] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:26:38] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:28:54] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:28:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:04] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:29:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:30:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:36:04] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:36:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:36:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:36:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:51:50] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:51:59] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:52:08] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:52:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:52:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:52:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:52:13] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:52:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:52:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:55:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:55:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:55:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:55:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:55:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:00:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:11:28] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:11:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:12:00] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:16:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:16:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:16:08] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:18:14] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:18:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:18:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:18:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:18:51] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:23:41] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:55:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:55:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:55:21] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:55:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:55:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:55:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:55:27] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:56:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:56:06] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:56:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:56:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[13:56:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:12:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:13] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:17] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:19] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:32] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:33] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:41] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:42] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:44] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:52] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:13:52] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:15:53] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:15:54] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:15:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:15:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:15:58] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:15:59] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:16:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:16:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:16:25] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:16:34] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:16:36] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:18:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:18:12] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:18:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:18:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:18:26] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:18:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:43] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:44] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:45] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:46] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:47] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:49] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:50] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:24:51] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:25:13] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:25:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:25:40] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:26:41] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:26:46] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:28:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:32:04] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:38:03] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:38:13] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:45:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:45:22] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.

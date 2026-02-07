@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrar Sensores – {{ nombre }}</title>
+
+    <!-- Estilo general del sistema -->
+    <link rel="stylesheet" href="/Estaticos/CSS/base_hmi.css">
+
+    <!-- Estilo específico de sensores -->
+    <link rel="stylesheet" href="/Estaticos/CSS/admin_sensores.css">
+</head>
+<body>
+
+<div class="barra-superior">
+    <a href="/proyecto/{{ nombre }}/historial" class="regresar">⟵ Historial del dispositivo</a>
+    <h2>Administrar Sensores – <strong>{{ nombre }}</strong></h2>
+    <div></div>
+</div>
+
+<div class="contenedor">
+    <form method="POST" action="/proyecto/{{ nombre }}/sensores/actualizar">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Dispositivo</th>
+                    <th>Nombre del Sensor</th>
+                    <th>Tópico</th>
+                    <th>Unidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sensor in sensores %}
+                    {% set i = loop.index %}
+                    <tr>
+                        <td>{{ i }}</td>
+                        <td>{{ sensor[1] }}</td>
+                        <td>
+                            <input type="hidden" name="sensor_id_{{ i }}" value="{{ sensor[0] }}">
+                            <input type="text" name="nombre_{{ i }}" value="{{ sensor[2] }}">
+                        </td>
+                        <td>{{ sensor[3] }}</td>
+                        <td>
+                            <input type="text" name="unidad_{{ i }}" value="{{ sensor[4] }}">
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <input type="hidden" name="total" value="{{ sensores|length }}">
+        <button type="submit">Guardar Cambios</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Sistema HMI</title>
+  
+  <link rel="stylesheet" href="/Estaticos/CSS/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <h1>Bienvenido al Sistema HMI</h1>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="wrapper">
+      <h2>Gestión de Proyectos</h2>
+
+      <div class="acciones">
+        <button class="btn primario" onclick="crearProyecto()">+ Crear nuevo proyecto</button>
+        <button class="btn secundario" onclick="window.location.reload()">Actualizar lista</button>
+      </div>
+
+      <section class="proyectos" id="lista-proyectos" role="region" aria-label="Proyectos disponibles">
+        <h3>Proyectos disponibles:</h3>
+        <div class="sin-proyectos">Aún no has creado ningún proyecto.</div>
+      </section>
+
+      <section class="utilidades" aria-label="Administración">
+        <h3>Administración</h3>
+        <div class="utilidad-botones">
+          <form action="/administrar_proyectos" method="get">
+            <button class="btn" type="submit">Administrar Proyectos</button>
+          </form>
+          <form action="/analisis_red" method="get">
+            <button class="btn" type="submit">Análisis de Red</button>
+          </form>
+          <form action="/logs" method="get">
+            <button class="btn" type="submit">Visualizar Logs</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      &copy; 2025 Sistema HMI - Escuela Superior de Ingenieria Mecanica y Electrica
+    </div>
+  </footer>
+
+  <script src="/Estaticos/js/index.js"></script>
+</body>
+</html>

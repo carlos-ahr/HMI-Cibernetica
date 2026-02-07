@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrar Dispositivos – HMI</title>
+  <link rel="stylesheet" href="/Estaticos/CSS/base_hmi.css">
+  <link rel="stylesheet" href="/Estaticos/CSS/tabla_datos.css">
+  <link rel="icon" href="/Estaticos/favicon.ico" type="image/x-icon">
+  <style>
+    .contenedor {
+      max-width: 1500px;
+      margin: 40px auto;
+      padding: 70px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .boton-solicitar {
+      display: block;
+      margin: 0 auto 30px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: #1c2e4a;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-solicitar:hover {
+      background-color: #2e4b70;
+    }
+
+    .acciones a {
+      color: #1c2e4a;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .acciones a:hover {
+      text-decoration: underline;
+    }
+
+    .flash {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .flash.success { background-color: #d4edda; color: #155724; }
+    .flash.warning { background-color: #fff3cd; color: #856404; }
+    .flash.error   { background-color: #f8d7da; color: #721c24; }
+
+    .btn-volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #3e5871;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-volver:hover {
+      background-color: #57708a;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Dispositivos Registrados</h1>
+
+    <form action="{{ url_for('dispositivos.enviar_peticion_registro') }}" method="post">
+      <button type="submit" class="boton-solicitar">Solicitar Registro a Dispositivos</button>
+    </form>
+
+    {% with mensajes = get_flashed_messages(with_categories=true) %}
+      {% if mensajes %}
+        {% for categoria, mensaje in mensajes %}
+          <div class="flash {{ categoria }}">{{ mensaje }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>IP</th>
+          <th>Puerto</th>
+          <th>Tipo</th>
+          <th>Comunicación</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for dispositivo in dispositivos %}
+          <tr>
+            <td>{{ dispositivo.nombre }}</td>
+            <td>{{ dispositivo.info.ip }}</td>
+            <td>{{ dispositivo.info.puerto }}</td>
+            <td>{{ dispositivo.info.tipo }}</td>
+            <td>{{ dispositivo.info.comunicacion }}</td>
+            <td id="estado-{{ dispositivo.nombre | replace(' ', '_') }}">
+              {{ dispositivo.estado }}
+            </td>
+            <td class="acciones">
+              <a href="{{ url_for('dispositivos.eliminar_dispositivo_web', nombre=dispositivo.nombre) }}"
+                 onclick="return confirm('¿Estás seguro de eliminar {{ dispositivo.nombre }}?')">Eliminar</a> |
+              <a href="{{ url_for('visual.editor_generico', nombre=dispositivo.nombre) }}">Editar</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <a href="/" class="btn-volver">⟵ Volver al Menú Principal</a>
+  </div>
+
+  <script src="/Estaticos/js/actualizar_dispositivos.js"></script>
+</body>
+</html>

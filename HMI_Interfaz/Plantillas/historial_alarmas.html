@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historial Alarmas - {{ nombre }}</title>
+  <link rel="icon" href="/Estaticos/favicon.ico" type="image/x-icon">
+  <style>
+    /* ===== ESTILO BASE GENERAL PARA SISTEMA HMI ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #eef2f7;
+      color: #2e3a59;
+      font-size: 28px;
+    }
+
+    h1, h2, h3, h4 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    /* ===== BARRA SUPERIOR ===== */
+    .barra-superior {
+      background-color: #2c3e50;
+      color: white;
+      padding: 16px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+
+    .barra-superior h2 {
+      font-size: 2.2rem;
+      text-align: center;
+      flex: 1;
+    }
+
+    .barra-superior a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #34495e;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .barra-superior a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* ===== CONTENEDOR GENERAL ===== */
+    .contenedor {
+      padding: 40px 60px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    /* ===== TABLA ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+      font-size: 1.6rem;
+    }
+
+    th {
+      background-color: #dc3545;
+      color: white;
+      padding: 18px 12px;
+      text-align: center;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+    }
+
+    td {
+      padding: 14px 12px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f1f9ff;
+    }
+
+    /* ===== COLORES DE ESTADO ===== */
+    .color-rojo {
+      color: #dc3545;
+      font-weight: bold;
+    }
+
+    .color-amarillo {
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    .color-verde {
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .color-azul {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra-superior">
+    <a href="/proyecto/{{ nombre }}/alarmas">⟵ Regresar</a>
+    <h2>Historial de Alarmas – <strong>{{ nombre }}</strong></h2>
+    <div style="width: 150px;"></div> <!-- Espaciador para centrar el título -->
+  </div>
+
+  <div class="contenedor">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha y Hora</th>
+          <th>Tópico</th>
+          <th>Tipo de Alarma</th>
+          <th>Mensaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% if eventos %}
+          {% for evento in eventos %}
+            <tr>
+              <td>{{ evento.fecha_hora }}</td>
+              <td>{{ evento.topico }}</td>
+              <td class="color-{{ evento.color }}">{{ evento.estado|capitalize }}</td>
+              <td>{{ evento.mensaje }}</td>
+            </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <td colspan="4">No se han registrado alarmas todavía para este dispositivo.</td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+</html>

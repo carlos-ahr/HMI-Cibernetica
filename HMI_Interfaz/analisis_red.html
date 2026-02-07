@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Análisis de Red</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/estilo.css') }}">
+    <style>
+        .info-dispositivo {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            padding: 8px;
+            font-size: 0.9em;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function iniciarEscaneo() {
+            const subred = document.getElementById("subred_input").value || "192.168.1";
+            document.getElementById("estado").textContent = "Escaneando red...";
+
+            fetch(`/escaneo_red/${subred}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("estado").textContent = "Escaneo completado.";
+                    mostrarLista("activos", data.activos, "green");
+                    mostrarLista("inactivos", data.inactivos, "red");
+                    mostrarLista("nuevos", data.nuevos_no_registrados, "orange");
+                });
+
+            fetch('/arp_rapido')
+                .then(response => response.json())
+                .then(ips => {
+                    mostrarARP("arp_detectados", ips, "blue");
+                });
+        }
+
+        function mostrarLista(id, lista, color) {
+            const contenedor = document.getElementById(id);
+            contenedor.innerHTML = "";
+            lista.forEach(ip => {
+                const item = document.createElement("li");
+                item.style.color = color;
+
+                const span = document.createElement("span");
+                span.textContent = ip;
+                item.appendChild(span);
+
+                if (id === "nuevos") {
+                    const boton = document.createElement("button");
+                    boton.textContent = "Registrar";
+                    boton.style.marginLeft = "10px";
+                    boton.onclick = () => {
+                        window.location.href = `/administrar_proyectos?ip=${ip}`;
+                    };
+                    item.appendChild(boton);
+                }
+
+                contenedor.appendChild(item);
+            });
+        }
+
+        function mostrarARP(id, lista, color) {
+            const contenedor = document.getElementById(id);
+            contenedor.innerHTML = "";
+            lista.forEach(ip => {
+                const item = document.createElement("li");
+                item.style.color = color;
+
+                const span = document.createElement("span");
+                span.textContent = ip;
+                item.appendChild(span);
+
+                // Botón registrar
+                const botonReg = document.createElement("button");
+                botonReg.textContent = "Registrar";
+                botonReg.style.marginLeft = "10px";
+                botonReg.onclick = () => {
+                    window.location.href = `/administrar_proyectos?ip=${ip}`;
+                };
+                item.appendChild(botonReg);
+
+                // Botón ver info
+                const botonInfo = document.createElement("button");
+                botonInfo.textContent = "Ver info";
+                botonInfo.style.marginLeft = "5px";
+                botonInfo.onclick = () => mostrarInfoDispositivo(ip, item);
+                item.appendChild(botonInfo);
+
+                contenedor.appendChild(item);
+            });
+        }
+        function mostrarInfoDispositivo(ip, contenedor) {
+            fetch(`/info_dispositivo/${ip}`)
+                .then(res => res.json())
+                .then(data => {
+                    const div = document.createElement("div");
+                    div.className = "info-dispositivo";
+
+                    if (data.error) {
+                        div.textContent = "Error al obtener info: " + data.error;
+                    } else {
+                        div.innerHTML = `
+                            <strong>IP:</strong> ${data.ip}<br>
+                            <strong>Hostname:</strong> ${data.hostname}<br>
+                            <strong>MAC:</strong> ${data.mac}<br>
+                            <strong>Puertos abiertos:</strong> ${data.puertos_abiertos.join(", ") || "Ninguno"}
+                        `;
+                    }
+
+                    contenedor.appendChild(div);
+                });
+        }
+        window.onload = iniciarEscaneo;
+    </script>
+</head>
+<body>
+    <h1>Estado de la Red</h1>
+    <p id="estado">Cargando...</p>
+
+    <label>Subred a escanear:</label>
+    <input type="text" id="subred_input" placeholder="192.168.1">
+    <button onclick="iniciarEscaneo()">Iniciar escaneo</button>
+
+    <h2>Activos</h2>
+    <ul id="activos"></ul>
+
+    <h2>Inactivos</h2>
+    <ul id="inactivos"></ul>
+
+    <h2>No Registrados (por escaneo TCP/IP)</h2>
+    <ul id="nuevos"></ul>
+
+    <h2>No Registrados (detectados en la red)</h2>
+    <ul id="arp_detectados"></ul>
+
+    <br>
+    <a href="/">Regresar al Menú Principal</a>
+</body>
+</html>

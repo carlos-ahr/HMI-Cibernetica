@@ -1,0 +1,82 @@
+{
+  "bloques": [
+    {
+      "tipo": "tipo-grafica",
+      "x": "78",
+      "y": "271",
+      "nombre": "Gr\u00e1fica",
+      "senales": [
+        {
+          "topico": "ArduinoRGB/analog/red",
+          "nombre": "ArduinoRGB/analog/red",
+          "color": "#FF6384"
+        },
+        {
+          "topico": "ArduinoRGB/analog/blue",
+          "nombre": "ArduinoRGB/analog/blue",
+          "color": "#36A2EB"
+        },
+        {
+          "topico": "ArduinoRGB/analog/green",
+          "nombre": "ArduinoRGB/analog/green",
+          "color": "#8BC34A"
+        }
+      ]
+    },
+    {
+      "tipo": "tipo-barra-progreso",
+      "x": "-11",
+      "y": "-24",
+      "nombre": "green",
+      "topicoPub": "ArduinoRGB/analog/green",
+      "color": "#4caf50",
+      "min": "0",
+      "max": "255"
+    },
+    {
+      "tipo": "tipo-barra-progreso",
+      "x": "-5",
+      "y": "104",
+      "nombre": "red",
+      "topicoPub": "ArduinoRGB/analog/red",
+      "color": "#e51515",
+      "min": "0",
+      "max": "255"
+    },
+    {
+      "tipo": "tipo-led",
+      "x": "803",
+      "y": "20",
+      "nombre": "switch",
+      "topicoPub": "ArduinoRGB/digital/switch",
+      "colorOn": "#00ff00"
+    },
+    {
+      "tipo": "tipo-selector-numerico",
+      "x": "342",
+      "y": "-5",
+      "nombre": "PWMgreen",
+      "topicoSub": "ArduinoRGB/analog/PWMgreen",
+      "valor": 100,
+      "nombreVisible": "Selector num\u00e9rico"
+    },
+    {
+      "tipo": "tipo-selector-pasos",
+      "x": "344",
+      "y": "122",
+      "nombre": "Selector por pasos",
+      "topicoSub": "ArduinoRGB/analog/PWMred",
+      "valor": 170,
+      "paso": "10"
+    },
+    {
+      "tipo": "tipo-selector-pasos",
+      "x": "606",
+      "y": "133",
+      "nombre": "Selector por pasos",
+      "topicoSub": "ArduinoRGB/analog/PWMblue",
+      "valor": 330,
+      "paso": "10"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+[09:31:50] [INFO] [MQTT] Conectado exitosamente con código: 0
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/1: 
+{
+  "id": "ArduinoRGB",
+  "ip": "192.168.2.169",
+  "hostnam
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/1
+[10:16:48] [DEBUG] Fragmento #1 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/2: e": "RGB_MQTT",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/2
+[10:16:48] [DEBUG] Fragmento #2 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/3: ",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoRGB/analo
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/3
+[10:16:48] [DEBUG] Fragmento #3 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/4: g/potR",
+    "ArduinoRGB/analog/potG",
+    "ArduinoRGB/analo
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/4
+[10:16:48] [DEBUG] Fragmento #4 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/5: g/potB",
+    "ArduinoRGB/analog/red",
+    "ArduinoRGB/analog
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/5
+[10:16:48] [DEBUG] Fragmento #5 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/6: /green",
+    "ArduinoRGB/analog/blue",
+    "ArduinoRGB/digit
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/6
+[10:16:48] [DEBUG] Fragmento #6 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/7: al/switch"
+  ],
+  "topics_sub": [
+    "ArduinoRGB/analog/PWM
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/7
+[10:16:48] [DEBUG] Fragmento #7 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/8: red",
+    "ArduinoRGB/analog/PWMgreen",
+    "ArduinoRGB/anal
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/8
+[10:16:48] [DEBUG] Fragmento #8 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/9: og/PWMblue"
+  ]
+}
+
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/9
+[10:16:48] [DEBUG] Fragmento #9 recibido de ArduinoRGB
+[10:16:48] [DEBUG] [MQTT] dispositivos/registro/ArduinoRGB/final: <<END>>
+[10:16:48] [WARNING] [DEBUG] procesar_fragmento llamado con: dispositivos/registro/ArduinoRGB/final
+[10:16:48] [WARNING] DEBUG: final recibido para ArduinoRGB
+[10:16:48] [WARNING] DEBUG: claves activas: ['ArduinoRGB']
+[10:16:48] [DEBUG] JSON RECONSTRUIDO COMPLETO para ArduinoRGB:
+
+{
+  "id": "ArduinoRGB",
+  "ip": "192.168.2.169",
+  "hostname": "RGB_MQTT",
+  "tipo": "Arduino",
+  "comunicacion": "mqtt",
+  "puerto": 1883,
+  "topics_pub": [
+    "ArduinoRGB/analog/potR",
+    "ArduinoRGB/analog/potG",
+    "ArduinoRGB/analog/potB",
+    "ArduinoRGB/analog/red",
+    "ArduinoRGB/analog/green",
+    "ArduinoRGB/analog/blue",
+    "ArduinoRGB/digital/switch"
+  ],
+  "topics_sub": [
+    "ArduinoRGB/analog/PWMred",
+    "ArduinoRGB/analog/PWMgreen",
+    "ArduinoRGB/analog/PWMblue"
+  ]
+}
+
+[10:16:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[10:16:48] [DEBUG] Archivo dispositivos.json guardado correctamente.
+[10:16:48] [INFO] Dispositivo 'ArduinoRGB' actualizado con IP 192.168.2.169.
+[10:16:48] [INFO] Dispositivo 'ArduinoRGB' registrado correctamente.
+[11:04:55] [INFO] [MQTT] Conectado exitosamente con código: 0
+[11:10:55] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:22:39] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:52:24] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:52:28] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:52:29] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[11:52:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:02:15] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:04:16] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:09:08] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:09:09] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:09:38] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:12:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:12:18] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:12:20] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:12:35] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:12:52] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:13:01] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:13:03] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:13:05] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:13:10] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:13:11] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:13:23] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[12:13:31] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[14:26:55] [INFO] [MQTT] Conectado exitosamente con código: 0
+[14:40:29] [INFO] [MQTT] Conectado exitosamente con código: 0
+[15:21:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[15:21:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[15:21:48] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[15:21:54] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[15:21:56] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.
+[15:21:57] [DEBUG] Archivo dispositivos.json cargado con 4 dispositivos.

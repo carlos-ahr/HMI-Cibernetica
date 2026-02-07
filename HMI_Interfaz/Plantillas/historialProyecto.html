@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial - {{ nombre }}</title>
+
+    <!-- Estilo base del sistema -->
+    <link rel="stylesheet" href="/Estaticos/CSS/base_hmi.css">
+    
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Estaticos/CSS/jquery.dataTables.min.css">
+</head>
+<body>
+
+    <!-- Barra superior fija -->
+    <div class="barra-superior">
+        <!-- Botón izquierdo -->
+        <div class="botones-barra">
+            <a href="/proyecto/{{ nombre }}/menu">⟵ Regresar</a>
+        </div>
+
+        <!-- Título centrado -->
+        <h2>Historial del dispositivo <strong>{{ nombre }}</strong></h2>
+
+        <!-- Botones derechos -->
+        <div class="botones-barra">
+            <a href="/proyecto/{{ nombre }}/histograma">Ver Histograma</a>
+            <a href="/proyecto/{{ nombre }}/sensores">⚙ Configurar Sensores</a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="contenedor">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+
+        <table id="tabla-historial" class="display">
+            <thead>
+                <tr>
+                    <th>Fecha y hora</th>
+                    <th>Dispositivo</th>
+                    <th>Nombre</th>
+                    <th>Variable/Tópico</th>
+                    <th>Valor</th>
+                    <th>Unidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for fila in registros %}
+                <tr>
+                    <td>{{ fila['timestamp'] }}</td>
+                    <td>{{ fila['dispositivo'] }}</td>
+                    <td>{{ fila['nombre_sensor'] }}</td>
+                    <td>{{ fila['topico'] }}</td>
+                    <td>{{ fila['valor'] }}</td>
+                    <td>{{ fila['unidad'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/Estaticos/js/lib/jquery-3.7.0.min.js"></script>
+    <script src="/Estaticos/js/lib/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tabla-historial').DataTable({
+                "order": [[0, "desc"]],
+                "language": {
+                    "search": "Buscar:",
+                    "lengthMenu": "Mostrar _MENU_ registros",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    },
+                    "zeroRecords": "No se encontraron registros",
+                    "infoEmpty": "Mostrando 0 registros"
+                }
+            });
+        });
+    </script>
+</body>
+</html>

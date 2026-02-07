@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registrar Nuevo Proyecto - IPN HMI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Estaticos/CSS/login.css">
+  <style>
+    .form-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .form-group input[readonly] {
+      background-color: #f0f0f0;
+    }
+
+    .form-section {
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+
+    .btn-registrar {
+      background-color: #5a1f1f;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn-registrar:hover {
+      background-color: #441717;
+    }
+
+    .pie {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .flashes {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .flashes .error {
+      background-color: #ffdddd;
+      color: #a94442;
+      padding: 10px;
+      border-left: 4px solid #a94442;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .flashes .exito {
+      background-color: #ddffdd;
+      color: #3c763d;
+      padding: 10px;
+      border-left: 4px solid #3c763d;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/IPN_logo.svg/120px-IPN_logo.svg.png" alt="Logo IPN">
+    <h2>Registrar Nuevo Proyecto</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flashes">
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+      <div class="form-group">
+        <label>ID del Dispositivo</label>
+        <input type="text" name="id" value="{{ dispositivo.id }}" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>IP</label>
+        <input type="text" value="{{ dispositivo.ip }}" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Hostname</label>
+        <input type="text" value="{{ dispositivo.hostname }}" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Tipo</label>
+        <input type="text" value="{{ dispositivo.tipo }}" readonly>
+      </div>
+
+      {% if dispositivo.comunicacion %}
+      <div class="form-group">
+        <label>Comunicación</label>
+        <input type="text" value="{{ dispositivo.comunicacion }}" readonly>
+      </div>
+      {% endif %}
+
+      {% if dispositivo.puerto %}
+      <div class="form-group">
+        <label>Puerto</label>
+        <input type="text" value="{{ dispositivo.puerto }}" readonly>
+      </div>
+      {% endif %}
+
+      {% if dispositivo.topics_pub %}
+      <div class="form-group">
+        <label>Topics de Publicación</label>
+        <ul>
+          {% for topic in dispositivo.topics_pub %}
+            <li>{{ topic }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {% if dispositivo.topics_sub %}
+      <div class="form-group">
+        <label>Topics de Suscripción</label>
+        <ul>
+          {% for topic in dispositivo.topics_sub %}
+            <li>{{ topic }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <div class="form-group form-section">
+        <label for="nombre_proyecto">Nombre del Proyecto</label>
+        <input type="text" id="nombre_proyecto" name="nombre_proyecto" required>
+      </div>
+
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <button type="submit" class="btn-registrar">Guardar y continuar</button>
+    </form>
+
+    <div class="pie">
+      Sistema HMI - Instituto Politécnico Nacional<br>
+      &copy; 2025 Todos los derechos reservados
+    </div>
+  </div>
+</body>
+</html>
